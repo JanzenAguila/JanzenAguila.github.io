@@ -1,0 +1,28 @@
+body{
+	background-color: #000000;
+	font-size: 35px;
+	color: #FFFFFF;
+	text-align: center;
+	text-shadow: 2px 2px #333333;
+}
+
+a{
+	color: #FF0000;
+	text-decoration: none;
+}
+
+#about{
+	background-color: #0000FF;
+	font-size: 25px;
+	padding: 15px;
+	width: 500px;
+}
+
+#image{
+	width: 150px;
+	height: 150px;
+}
+
+.smalltext{
+	font-size: 20px;
+}
