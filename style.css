@@ -6,20 +6,40 @@ body{
 }
 
 a{
-	color: #FFFF00;
+	color: #FFAA00;
 	text-decoration: none;
 }
 
+a:hover{
+	text-decoration: underline;
+}
+
 #about{
+	text-align: left;
 	background-color: #000022;
 	font-size: 25px;
 	padding: 15px;
 	width: 500px;
 }
 
+#highlight:hover{
+	color: #0000FF;
+	cursor: default;
+}
+
 #image{
 	width: 150px;
 	height: 150px;
+}
+
+.parallax{
+	background-image: url("platelet.jpg");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: translateZ(-1px) scale(.95);
+    z-index: -1;
 }
 
 .smalltext{
