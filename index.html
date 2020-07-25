@@ -1,46 +1,252 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>My page</title>
-		<link rel="stylesheet" type="text/css" href="style.css" />
-	</head>
-	<body>
-		<div class="parallax">
-			<center>
-				<div style="width: 1000px;"><h1><a href="index.html">Janzen Christian D. Aguila</a></h1></div>
-				<a href="profile_img.png"><img id="image" src="profile_img.png" alt="Picture" l/></a>
-				<p class="smalltext">Nickname: Janzen<br />Click the image to see full view.</p>
-				<div style="width: 1000px; background-color: #0088AA; padding: 25px; opacity: .85">
-				The REAL reason for taking CMSC (or whatever your course is):
-				<p class="smalltext">First, I actually had no idea what course have I entered myself into. Second, I took CMSC since I know that it involves computers, which actually brings me to my choices back in High School(Computer Science, Electronics and Communications Engineering, and Computer Engineering). Lastly, the real reason right now that I am taking CMSC is to be prepared for the further advancement that technology is about to bring us.</p><hr width="1000px" color="#000000" />
-				Favorite CMSC subject so far and WHY: <strong>CMSC 131</strong>
-				<p class="smalltext">Why: It was due to the fact that I enjoyed coding and exploring a lot in Assembly, even though I know that it will be rarely used with regards to the working world.</p><hr width="1000px" color="#000000" />
-				Favorite PROGRAMMING LANGUAGE and WHY (If someone puts HTML/CSS here kick them out): <strong>Java</strong>
-				<p class="smalltext">Why: I think it is Java since I thought that a lot of previous concepts left hanging from Python and C, together with their differences as sequential and object-oriented being cleared up.</p><hr width="1000px" color="#000000" />
-				Favorite food: <strong>Sinigang</strong> | Favorite Color: <strong><span id="highlight">Blue</span></strong>
-				<hr width="1000px" color="#000000" />
-				<h4>About yourself</h4>
-				<div id="about">
-					<table>
-						<tr>
-							- I am a student of University of the Philippines Los Banos.<br/>
-						</tr>
-						<tr>
-							- I am currently taking BS Computer Science as my couse.<br/>
-						</tr>
-						<tr>
-							- Hobbies: I love playing musical instruments, as well as play online and offline PC and mobile games.<br/>
-						</tr>
-						<tr>
-							- I am the only child in our family.<br/>
-						</tr>
-						<tr>
-							- I jam with my friends/bandmates in high school at least once a year.<br/>
-						</tr>
-					</table>
-				</div>
-				<p align="right"><a href="#">Back to top</a></p>
-			</div></center>
-		</div>
-	</body>
+<html lang="en">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <head>
+    	<title>Janzen Aguila Landing Page</title>
+        <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css" />
+        <style type="text/css">
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+            	}
+            }
+        </style>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body class="text-center">
+    	<div class="cover-container d-flex w-100 h-100 p-5 mx-auto flex-column" id="top">
+    		<header class="masthead mb-auto p-2">
+    			<div class="inner">
+    				<nav class="navbar nav-masthead navbar-expand-md navbar-dark fixed-top" style="background: rgba(0,0,0,0.3);">
+    					<a href="#top"><h1 class="masthead-brand p-4">Home</h1></a>
+    					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    						<span class="navbar-toggler-icon"></span>
+    					</button>
+    					<div class="collapse navbar-collapse" id="navbarCollapse">
+    						<ul class="navbar-nav mr-auto">
+    							<li class="nav-item">
+    								<a class="nav-link" href="#top">Cover</a>
+    							</li>
+    							<li class="nav-item">
+    								<a class="nav-link" href="#aboutme">About me</a>
+    							</li>
+    							<li class="nav-item">
+    								<a class="nav-link" href="#skill-portfolio">Portfolio</a>
+    							</li>
+    							<li class="nav-item">
+    								<a class="nav-link" href="#contactme">Contact</a>
+    							</li>
+    							<li class="nav-item">
+    								<a class="nav-link" href="#credits">Credits</a>
+    							</li>
+    						</ul>
+    					</div>
+    				</nav>
+    			</div>
+    		</header>
+    		<main role="main">
+    			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    				<ol class="carousel-indicators">
+    					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    					<li data-target="#myCarousel" data-slide-to="1"></li>
+    				</ol>
+    				<div class="carousel-inner">
+    					<div class="container">
+    						<div class="carousel-caption">
+    							<img src="assets/Janzen.png" class="img-thumbnail w-25"  />
+    							<h1 class="cover-heading">Janzen Christian Aguila</h1>
+    							<p class="lead">Hello and welcome to my landing page!</p>
+    							<p class="lead">
+    								<a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+    							</p>
+    						</div>
+    					</div>
+    					<div class="carousel-item active">
+    						<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#000"/></svg>
+    					</div>
+    					<div class="carousel-item">
+    						<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+    					</div>
+    				</div>
+    			</div>
+    		</main>
+
+    		<p id="aboutme">
+    			<h3 class="masthead-brand">ABOUT ME</h3>
+    			<hr class="hr-divider" />
+    			<div class="row featurette position-relative p-3 p-md-5 m-md-3 text-left bg-secondary shadow inline-item show-on-scroll">
+    				<div class="col-md-7">
+    					<h2 class="featurette-heading">An undergraduate student of <div><a href="https://uplb.edu.ph/main/" title="UPLB Official Site" target="_blank"><b>University of the Philippines Los Baños</b></a></div></h2>
+    					<p class="lead">I am currently pursuing a BS Computer Science degree in the University of the Philippines Los Baños (UPLB).</p>
+    				</div>
+    				<div class="col-md-5">
+    					<img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="400" src="assets/UP-Logo.png" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500" title="University of the Philippines Los Baños logo">
+    				</div>
+    			</div>
+    			<div class="row featurette position-relative p-3 p-md-5 m-md-3 text-left bg-dark shadow inline-item show-on-scroll">
+    				<div class="col-md-7 order-md-2">
+    					<h2 class="featurette-heading">A developer of the <div><a href="https://www.facebook.com/ACSSPH" title="Alliance of Computer Science Students Official Facebook page" target="_blank"><b>Alliance of Computer Science Students</b></a></div></h2>
+    					<p class="lead">I am currently a member of an academic organization named Alliance of Computer Science Students (ACSS).</p>
+    				</div>
+    				<div class="col-md-5 order-md-1">
+    					<img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="400" src="assets/ACSS-Logo.png" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500" title="Alliance of Computer Science Students logo">
+    				</div>
+    			</div>
+    			<div class="row featurette position-relative p-3 p-md-5 m-md-3 text-left bg-secondary shadow inline-item show-on-scroll">
+    				<div class="col-md-7">
+    					<h2 class="featurette-heading">The Publicity Committee Head for <div><a href="https://www.facebook.com/upsomasoshiki/" title="University of the Philippines Sentai Ongaku Manga Anime Soshiki Official Facebook page" target="_blank"><b>UP SOMA Soshiki</b></a></div></h2>
+    					<p class="lead">I also serve as the current publicity committee head, or <i>Senden Iinchou</i> of the University of the Philippines Sentai Ongaku Manga Anime Soshiki (UP SOMA Soshiki).</p>
+    				</div>
+    				<div class="col-md-5">
+    					<img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="400" src="assets/SOMA-Logo.png" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500" title="University of the Philippines Sentai Ongaku Manga Anime Soshiki logo">
+    				</div>
+    			</div>
+    		</p>
+    		<p id="skill-portfolio">
+    			<h3 class="masthead-brand">SKILLS AND PORTFOLIO</h3>
+    			<hr class="hr-divider" />
+    			<div class="m-2 p-5">
+    				<span class="lead">So what can I actually do?</span>
+    			</div>
+    			<div class="card bg-dark m-2 p-5 shadow inline-item show-on-scroll">
+    				As a Computer Science student, I have learned a lot of skills that is needed for developers to have. I have done projects with different people that involve different languages and technologies, including Python, Java, C, WordPress, MySQL, Node, React, PHP, and a lot more. Unfortunately most of them are not uploaded to GitHub, but they can be made available upon request. However, if you want to see a sample of what I am capable of, I'll be showing samples of my works.
+    				<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 justify-content-lg-around">
+    					<div class="bg-secondary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden shadow">
+    						<div class="my-3 py-3">
+    							<h2 class="display-5"><a id="makibis-tooltip" href="https://makibis.herokuapp.com" target="_blank">MakiBIS</a></h2>
+    							<p class="lead">Makiling Biodiversity Information System</p>
+    							<p>Click the name to visit the site.<br />Hover for more info.</p>
+    						</div>
+    						<img src="assets/MAKIBIS-logo.png" class="img-thumbnail w-50" />
+    					</div>
+    					<div class="bg-secondary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden shadow">
+    						<div class="my-3 py-3">
+    							<h2 class="display-5"><a id="gachawaif-tooltip" href="https://discord.gg/emzH9cv" target="_blank">GachaWaif</a></h2>
+    							<p class="lead">GachaWaif bot on the Discord platform</p>
+    							<p>Click the name to test the bot.<br />Hover for more info.</p>
+    						</div>
+    						<img src="assets/Linette_Vance-GachaWaif.png" class="img-thumbnail w-50" />
+    					</div>
+    				</div>
+    			</div>
+    			<div class="card bg-dark m-2 p-5 shadow inline-item show-on-scroll">
+    				I also have a lot of projects involved with video and photo editing. I have been editing these types of materials ever since I was in high school, and it further improved when I assumed the Publicity Committee Head position in UP SOMA Soshiki. I have over 5 years of work in stock, and I would be pleased to show them to you.
+    				<hr />
+    				<div class="container w-100"><h3>Video Samples</h3></div>
+    				<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 justify-content-lg-around">
+    					<div class="flex-wrap w-50 text-center shadow bg-secondary p-5">
+	    					<iframe src="https://drive.google.com/file/d/19Z7TDlnnx_KaM3bn6aEw3Rxrxlb8d-cp/preview" class="img-thumbnail" title="Video Sample 1"></iframe>
+	    				</div>
+	    				<div class="flex-wrap w-50 text-center shadow bg-secondary p-5">
+	    					<iframe src="https://drive.google.com/file/d/14uC5g1ddZAurkiZFm0rWM6-qNqFqdu2P/preview" class="img-thumbnail" title="Video Sample 2"></iframe>
+	    				</div>
+    				</div>
+                    <p class="lead">To view more, click on the link below<br /><a href="https://tinyurl.com/AguilaVideoSamples">Videos</a></p>
+                    <hr />
+    				<div class="container w-100"><h3>Image Samples</h3></div>
+    				<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 justify-content-lg-around">
+    					<div class="flex-wrap w-50 text-center shadow bg-secondary p-5">
+	    					<img src="assets/Anniv-Frame.png" class="img-thumbnail w-50" id="pic1-tooltip" />
+	    				</div>
+	    				<div class="flex-wrap w-50 text-center shadow bg-secondary p-5">
+	    					<img src="assets/Pubmat-samp.png" class="img-thumbnail w-50" id="pic2-tooltip" />
+	    				</div>
+    				</div>
+    			</div>
+                <div class="card bg-dark m-2 p-5 shadow inline-item show-on-scroll">
+                    I draw from time to time as well, where most of what I draw are characters from anime or games.
+                    <div class="container bg-secondary p-5">
+                        This section is a work in progress, but for now you can see my works on pixiv by clicking <div><a href="https://www.pixiv.net/en/users/52754394" title="My Pixiv profile" target="_blank">here</a></div>
+                    </div>
+                </div>
+    		</p>
+    		<p id="contactme">
+    			<h3 class="masthead-brand">CONTACT ME</h3>
+    			<hr class="hr-divider" />
+    			<div>
+    				<a href="mailto:janzenaguila@gmail.com" target="_blank" class="btn-social" id="email-tooltip"><img class="img-thumbnail" src="assets/icons/png/008-gmail.png" /></a>
+    				<a href="skype:janzenaguila?chat" target="_blank" class="btn-social" id="skype-tooltip"><img class="img-thumbnail" src="assets/icons/png/010-skype.png" /></a>
+    				<a href="https://www.linkedin.com/in/janzen-christian-aguila-27502b17a" target="_blank" class="btn-social" id="linkedin-tooltip"><img class="img-thumbnail" src="assets/icons/png/006-linkedin.png" /></a>
+    				<a href="https://www.facebook.com/janzenaguila" target="_blank" class="btn-social" id="facebook-tooltip"><img class="img-thumbnail" src="assets/icons/png/001-facebook.png" /></a>
+    				<a href="https://github.com/JanzenAguila" target="_blank" class="btn-social" id="github-tooltip"><img class="img-thumbnail" src="assets/icons/png/011-github.png" /></a>
+    			</div>
+    		</p>
+    		<p id="credits">
+    			<h3 class="masthead-brand">CREDITS</h3>
+    			<hr class="hr-divider" />
+    			<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    			<div>Animations from <a href="https://cssanimation.rocks/scroll-animations/" title="CSS Animation">CSS Animation</a></div>
+    		</p>
+    		<footer class="mastfoot mt-auto">
+    			<div class="inner">
+    				<span>Back to <a href="#top">top</a></span>
+    			</div>
+    		</footer>
+    	</div>
+    	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    	<script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+    	<script src="bootstrap-4.5.0-dist/js/bootstrap.bundle.js"></script>
+    	<script src="scripts/show-on-scroll.js"></script>
+    	<script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+    	<script type="text/javascript">
+    		// MAKIBIS TOOLTIP
+    		tippy('#makibis-tooltip', {
+    			content: "This is a web application that I worked on during my internship. I was assigned as part of the back-end team. I am responsible for the development of multiple functions on the back-end, connection of the back-end to the front-end, a bit of contribution to the front-end work, and deployment to Heroku as well. Our job was to recreate the old interface of the PHP web app to a new look that is implemented with Node, React and MySQL.",
+    		});
+    		// GACHAWAIF TOOLTIP
+    		tippy('#gachawaif-tooltip', {
+    			content: "This is a Discord bot that I created to test the Discord API. Its main goal is to roll for different anime girls chosen at random. This bot was implemented using Python. Currently, it is not yet on the official list of bots recognized by Discord. You can view the skeleton at https://github.com/JanzenAguila/gachaWaifWeb",
+    		});
+    		tippy('#email-tooltip', {
+    			content: "Send me an email",
+    		});
+    		tippy('#skype-tooltip', {
+    			content: "Chat me on Skype",
+    		});
+    		tippy('#linkedin-tooltip', {
+    			content: "Connect with me on LinkedIn",
+    		});
+    		tippy('#facebook-tooltip', {
+    			content: "Message me on Facebook",
+    		});
+    		tippy('#github-tooltip', {
+    			content: "Contact me on GitHub",
+    		});
+    		tippy('#vid1-tooltip', {
+    			content: "Boku No Hero Academia Quiz Contest Official Promotional Video. Made with Adobe After Effects and Windows Movie Maker.",
+    		});
+    		tippy('#vid2-tooltip', {
+    			content: "JPOP Music Video Compilation. Made with Adobe After Effects and Windows Movie Maker.",
+    		});
+    		tippy('#pic1-tooltip', {
+    			content: "Anniversary frame for one of my university organizations. Deployed on Facebook, and is can be searched by inputting SOMA in the frames search bar. Created using Adobe Photoshop.",
+    		});
+    		tippy('#pic2-tooltip', {
+    			content: "Publicity material made for the same organization. Used to promote Japanese culture and gain new members. Created using Adobe Photoshop.",
+    		});
+    	</script>
+    </body>
+    	<!-- TO YOU WHO'S VIEWING THIS SOURCE: -->
+    	
+    	<!-- 
+			TTTTTTTTTTTTTTT HHHHH     HHHHH    AAAAAAAAA    NNNNNN    NNNNN KKKKK     KKKKK     SSSSSSSSSSS
+			TTTTTTTTTTTTTTT HHHHH     HHHHH   AAAAAAAAAAA   NNNNNNN   NNNNN KKKK    KKKK       SSSSSSSSSSSS
+			     TTTTT      HHHHH     HHHHH  AAAA     AAAA  NNNNNNNN  NNNNN KKKK  KKKK          SSSSSS
+			     TTTTT      HHHHHHHHHHHHHHH AAAAA     AAAAA NNNNN NNN NNNNN KKKKKKKKK            SSSSSS
+			     TTTTT      HHHHHHHHHHHHHHH AAAAAAAAAAAAAAA NNNNN  NNNNNNNN KKKK  KKKK            SSSSSS
+			     TTTTT      HHHHH     HHHHH AAAAAAAAAAAAAAA NNNNN   NNNNNNN KKKK    KKKK    SSSSSSSSSSSSS
+			     TTTTT      HHHHH     HHHHH AAAAA     AAAAA NNNNN    NNNNNN KKKKK     KKKKK SSSSSSSSSSSS
+    	 -->
+    </body>
 </html>
