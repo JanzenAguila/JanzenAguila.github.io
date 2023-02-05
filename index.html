@@ -21,8 +21,21 @@
             }
         </style>
         <link rel="stylesheet" href="css/style.css" />
+        <script>
+            function removeOverlay() {
+                document.getElementById("overlay-notice").style.cssText = "display:none !important";
+            }
+        </script>
     </head>
     <body class="text-center">
+        <div id="overlay-notice" class="overlay d-flex flex-column align-items-center justify-content-center">
+            This is no longer my updated portfolio! You can find the new one here:
+            <p>
+                <h1><strong><a href="https://janzenaguila.netlify.app">Janzen Aguila's Updated Portfolio</a></i></strong></h1>
+                <hr/>
+                <button onclick="removeOverlay()">Continue viewing this portfolio instead</button>
+            </p>
+        </div>
     	<div class="cover-container d-flex w-100 h-100 p-5 mx-auto flex-column" id="top">
     		<header class="masthead mb-auto p-2">
     			<div class="inner">
