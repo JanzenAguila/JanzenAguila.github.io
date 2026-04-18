@@ -22,23 +22,63 @@
         </style>
         <link rel="stylesheet" href="css/style.css" />
         <script>
+            var redirectDelayMs = 5000;
+            var redirectTimer = null;
+            var redirectCountdownTimer = null;
+
             function removeOverlay() {
+                if (redirectTimer) {
+                    clearTimeout(redirectTimer);
+                    redirectTimer = null;
+                }
+                if (redirectCountdownTimer) {
+                    clearInterval(redirectCountdownTimer);
+                    redirectCountdownTimer = null;
+                }
                 document.getElementById("overlay-notice").style.cssText = "display:none !important";
             }
+
+            function startRedirect() {
+                var targetUrl = "https://janzenaguila.netlify.app";
+                var countdownEl = document.getElementById("redirect-countdown");
+                var secondsRemaining = Math.ceil(redirectDelayMs / 1000);
+
+                countdownEl.textContent = secondsRemaining;
+                redirectCountdownTimer = setInterval(function () {
+                    secondsRemaining -= 1;
+                    if (secondsRemaining <= 0) {
+                        clearInterval(redirectCountdownTimer);
+                        redirectCountdownTimer = null;
+                        return;
+                    }
+                    countdownEl.textContent = secondsRemaining;
+                }, 1000);
+
+                redirectTimer = setTimeout(function () {
+                    window.location.href = targetUrl;
+                }, redirectDelayMs);
+            }
+
+            window.addEventListener("DOMContentLoaded", startRedirect);
         </script>
     </head>
     <body class="text-center">
         <div id="overlay-notice" class="overlay d-flex flex-column align-items-center justify-content-center">
-            This is no longer my updated portfolio! You can find the new one here:
-            <p>
-                <h1><strong><a href="https://janzenaguila.netlify.app">Janzen Aguila's Updated Portfolio</a></i></strong></h1>
-                <hr/>
-                <button onclick="removeOverlay()">Continue viewing this portfolio instead</button>
+            <h1 class="overlay-title">Updated portfolio available</h1>
+            <p class="overlay-description">
+                You will be redirected to the latest version in
+                <strong><span id="redirect-countdown">5</span>s</strong>.
             </p>
-			<p>
-				To get a copy of my resume/CV instead please get them through these links:<br />
-				<h3><a href="assets/docs/JCDAguila_Resume.pdf" download>Resume Link</a></h3>
-				<h3><a href="assets/docs/JCDAguila_CV.pdf" download>CV Link</a></h3>
+            <p class="overlay-description">
+                <a class="btn btn-light btn-lg" href="https://janzenaguila.netlify.app">Go to updated portfolio now</a>
+            </p>
+            <p class="overlay-legacy-option">
+                <a class="overlay-legacy-link" href="#" onclick="removeOverlay(); return false;">View archived portfolio</a>
+            </p>
+			<p class="overlay-description">
+				Resume/CV downloads:<br />
+				<a href="assets/docs/JCDAguila_Resume.pdf" download>Resume</a> |
+				<a href="assets/docs/JCDAguila_CV.pdf" download>CV</a>
 			</p>
         </div>
     	<div class="cover-container d-flex w-100 h-100 p-5 mx-auto flex-column" id="top">
